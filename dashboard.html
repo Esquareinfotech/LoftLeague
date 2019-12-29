@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LoftLeague</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+            <link rel="stylesheet" type="text/css" href="./css/BackgroundSlider.css"/>
+            <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+            <script language="javascript" type="text/javascript" src="./js/BackgroundSlider.js"></script>
+            <link rel="stylesheet" type="text/css" href="css/leaguecss.css">
+        </head>
+    
+    </html>
+
+</head>
+<body>
+    <div class="container-fluid">
+
+  
+    <div id="background-slide5" class="background-slider"></div>
+    <div id="background-slide4" class="background-slider"></div>
+    <div id="background-slide3" class="background-slider"></div>
+    <div id="background-slide1" class="background-slider"></div>
+    <div id="background-slide2" class="background-slider"></div>
+    <div id="background-slide0" class="background-slider"></div>
+    <script>
+    
+$(document).ready(function () {
+   
+   (function changeBg() {
+       var img_array = ["http://esquareinfo.net/Loftleague/images/bg2.jpg", 
+       "http://meetkarthickv77535.ipage.com/Loftleague/images/basketball.jpg", 
+       "http://meetkarthickv77535.ipage.com/Loftleague/images/kabadi.jpg",
+       "http://meetkarthickv77535.ipage.com/Loftleague/images/football.jpg",
+       "http://meetkarthickv77535.ipage.com/Loftleague/images/leaguebg.jpg"
+       ],
+       _nxtIndex = 0,
+       _curIndex = 0,
+       interval = 1000;
+           function nextIndex(){ _nxtIndex =  (  _nxtIndex + 1) % img_array.length; return _nxtIndex;};
+           
+           function shiftIndexes(){
+               _curIndex = _nxtIndex;
+               nextIndex();
+           }
+           
+           function assignBackgrounds(){
+               for (var i=0; i<img_array.length;i++){
+                   
+                   $('#background-slide'+i).css('backgroundImage', function () {
+                            return 'url(' + img_array[i] + ')';
+                        });
+                    if(i==0){
+                        $('#background-slide'+i).css('opacity', 1);
+                    }
+                    else{
+                        $('#background-slide'+i).css('opacity', 0);
+                    }
+               }
+            }
+           
+           function startBackgroundOpacityToggle() {
+             //console.log("in startBackgroundOpacityToggle. _curIndex = "+_curIndex);
+             elem = $('#background-slide'+_curIndex);
+             elem.animate({
+                        opacity: (elem.css('opacity')==0) ? 1 : 0
+                    }, {
+                        duration: 5000,
+                        start: finishBackgroundOpacityToggle         
+                      }); };
+                  
+           function finishBackgroundOpacityToggle (){
+             //console.log("in finishBackgroundOpacity. _nxtIndex = "+_nxtIndex);
+               elem = $('#background-slide'+_nxtIndex);
+               elem.animate({
+                       opacity: (elem.css('opacity')==0) ? 1 : 0
+                   },  {
+                       duration: 5000,
+                       complete: runSlider
+                     });
+           
+           };
+           
+           function runSlider(){
+               shiftIndexes();
+               setTimeout(startBackgroundOpacityToggle,interval);
+           } 
+           
+           assignBackgrounds();
+           runSlider();
+   })(); 
+});
+    </script>
+   
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <!----left coulum start-->
+       
+        <div class="col-sm-6" id="overflowTest" style="background-image: url('images/bg.jpg'); background-size: cover;">
+            <div class="navbar">
+                &nbsp; <a href="leagues.html" ><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a>
+                <a class="active" href="dashboard.html"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Profile</a>
+                <a href="#contact"><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp;My matches</a>
+                <a href="#contact"><i class="fa fa-bars" aria-hidden="true"></i>&nbsp;Menu</a>
+              </div>
+            <h2 style="color: white;"><b></b></h2>
+<div class="container-fluid"   style="background-color:white; border-radius: 20px;">
+<div class="row">
+    <div class="col-sm-2"><br>
+<img src="images/c1.png" alt="profile photo" style="width: 60px; height: 60px;"/>
+    </div>
+    <div class="col-sm-6"><br>
+        <h5><b>XX-XXXXXXXXXX</b></h5>
+    </div>
+    <div class="col-sm-4"><br>
+        <a href="" class="buttonnn"><b>Edit info</b></a>
+    </div>
+</div><hr>
+<div class="row">
+    <h3 style="margin-left: 15px;"><b>My Accounts</b></h3>
+</div>
+<div class="row">
+    <div class="col-sm-6">
+        <div class="col-sm-3"><img src="images/cashh.png" style="width: 70px; height: 60px;"/></div>
+        <div class="col-sm-7"><p><b>$0<br>Cash Balance</b></p></div>
+    </div>
+    <div class="col-sm-6">
+        <div class="col-sm-4"><img src="images/withdraw.jpg" style="width: 70px; height: 60px;"/></div>
+        <div class="col-sm-8"><p><b>$0<br>Withdraw</b></p></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6">
+        <a href="deposit.html" class="buttonnn"><b>Deposit</b></a>
+    </div>
+    <div class="col-sm-6">
+        <a href="" class="buttonnn"><b>Withdraw</b></a>
+    </div>
+</div>
+
+<hr>
+<div class="row">
+
+   <a href=""> <h4 style="margin-left: 15px;"><b>Documents</b></h4></a><hr>
+   <a href=""> <h4 style="margin-left: 15px;"><b>Transaction</b></h4></a><hr>
+   <a href="winnersboard.html"> <h4 style="margin-left: 15px;"><b>Winners Board</b></h4></a><hr>
+   <a href=""> <h4 style="margin-left: 15px;"><b>Logout</b></h4></a><hr>
+
+</div>
+
+</div>
+     
+        </div>
+
+
+
+
+
+        
+    
+        <!-------left column end-->
+        <!----right column start-->
+        <div class="col-sm-3"></div>
+        <!---right column end-->
+    </div>
+</div>
+</div>
+</body>
+</html>

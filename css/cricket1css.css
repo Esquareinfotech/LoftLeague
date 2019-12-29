@@ -1,0 +1,317 @@
+
+.background-slider {
+    position: absolute; 
+    top:0;
+    left:0;
+    z-index: -1;
+    height:100%;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.button {
+    background: #1be4eb;
+    
+     border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 4px;
+    cursor: pointer;
+    width: 130px;
+    height: 45px;
+   
+  }
+  .button:hover {
+    background: #3db439;
+    
+   border: 1px solid white;
+    border-radius: 22px;
+    color: rgb(235, 230, 230);
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 4px;
+    cursor: pointer;
+    width: 134px;
+    height: 45px;
+  }
+
+  
+/* Style the tab */
+.tab {
+    overflow: hidden;
+  
+    border-radius: 5px;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 25px 40px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: rgb(240, 236, 236);
+    color: red;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+   text-underline-position:  below;
+   color: red;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    
+    border-top: none;
+  }
+  #cricketrow1{
+      background-color: white;
+     
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 10px;
+  }
+  a:hover{
+text-decoration: none;
+
+  }
+ 
+  #left{
+      float: left;
+      padding-bottom: 20px;
+      padding-top: 20px;
+  }
+  #right{
+      float: right;
+      padding-bottom: 20px;
+      padding-top: 20px;
+  }
+  #imgleft{
+      height: 80px;
+      width: 80px;
+      max-width: 100%;
+      height: auto;
+  }
+  #imgright{
+    height: 80px;
+    width: 80px;
+    max-width: 100%;
+    height: auto;
+}
+#vstitle{
+    text-align: center;
+
+    max-width: 100%;
+    height: auto;
+}
+.ctitle{
+font-size: 17px;
+color: rgb(75, 73, 73);
+}
+.chour{
+    font-size: 14px;
+    color: rgb(243, 39, 39);
+}
+#overflowTest{
+  
+  padding: 15px;
+
+  height: 912px;
+  overflow: scroll;
+  border: 1px solid #ccc;
+}
+
+html {
+	-webkit-font-smoothing: antialiased!important;
+	-moz-osx-font-smoothing: grayscale!important;
+	-ms-font-smoothing: antialiased!important;
+}
+
+.md-stepper-horizontal {
+	display:table;
+  width:100%;
+  height: 70px;
+	margin:0 auto;
+  background-color:#FFFFFF;
+  border-radius: 20px;
+	box-shadow: 0 3px 8px -6px rgba(0,0,0,.50);
+}
+.md-stepper-horizontal .md-step {
+	display:table-cell;
+	position:relative;
+	padding:4px;
+}
+.md-stepper-horizontal .md-step:hover,
+.md-stepper-horizontal .md-step:active {
+	background-color:rgba(0,0,0,0.04);
+}
+.md-stepper-horizontal .md-step:active {
+	border-radius: 15% / 75%;
+}
+.md-stepper-horizontal .md-step:first-child:active {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.md-stepper-horizontal .md-step:last-child:active {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.md-stepper-horizontal .md-step:hover .md-step-circle {
+	background-color:#757575;
+}
+.md-stepper-horizontal .md-step:first-child .md-step-bar-left,
+.md-stepper-horizontal .md-step:last-child .md-step-bar-right {
+	display:none;
+}
+.md-stepper-horizontal .md-step .md-step-circle {
+	width:30px;
+	height:30px;
+	margin:0 auto;
+	background-color:#999999;
+	border-radius: 50%;
+	text-align: center;
+	line-height:30px;
+	font-size: 16px;
+	font-weight: 600;
+	color:#FFFFFF;
+}
+.md-step-circle1{
+    width:30px;
+	height:30px;
+	margin:0 auto;
+	background-color:#f31111;
+	border-radius: 50%;
+	text-align: center;
+	line-height:30px;
+	font-size: 16px;
+	font-weight: 600;
+	color:#FFFFFF;
+}
+.md-stepper-horizontal.green .md-step.active .md-step-circle {
+    background-color:#999999;
+}
+
+.md-stepper-horizontal .md-step.active .md-step-circle {
+    background-color:#999999;
+}
+.md-stepper-horizontal .md-step.done .md-step-circle:before {
+	font-family:'FontAwesome';
+	font-weight:100;
+	content: "1";
+}
+.md-stepper-horizontal .md-step.done .md-step-circle *,
+.md-stepper-horizontal .md-step.editable .md-step-circle * {
+	display:none;
+}
+
+.md-stepper-horizontal .md-step.editable .md-step-circle:before {
+	font-family:'FontAwesome';
+	font-weight:100;
+	content: "2";
+}
+.md-stepper-horizontal .md-step .md-step-title {
+	margin-top:16px;
+	font-size:14px;
+	font-weight:600;
+}
+.md-stepper-horizontal .md-step .md-step-title,
+.md-stepper-horizontal .md-step .md-step-optional {
+	text-align: center;
+	color:rgba(0,0,0,.26);
+}
+.md-stepper-horizontal .md-step.active .md-step-title {
+	font-weight: 600;
+	color:rgba(0,0,0,.87);
+}
+.md-stepper-horizontal .md-step.active.done .md-step-title,
+.md-stepper-horizontal .md-step.active.editable .md-step-title {
+	font-weight:600;
+}
+.md-stepper-horizontal .md-step .md-step-optional {
+	font-size:12px;
+}
+.md-stepper-horizontal .md-step.active .md-step-optional {
+	color:rgba(0,0,0,.54);
+}
+.md-stepper-horizontal .md-step .md-step-bar-left,
+.md-stepper-horizontal .md-step .md-step-bar-right {
+	position:absolute;
+	top:36px;
+	height:1px;
+	border-top:1px solid #DDDDDD;
+}
+.md-stepper-horizontal .md-step .md-step-bar-right {
+	right:0;
+	left:50%;
+	margin-left:20px;
+}
+.md-stepper-horizontal .md-step .md-step-bar-left {
+	left:0;
+	right:50%;
+	margin-right:20px;
+}
+
+#teamtitle{
+  background-color: rgb(29, 128, 240);
+  height: 40px;
+}
+
+
+#profile{
+color: black;
+padding: 10px;
+text-align: center;
+
+}
+#profilename{
+  color: black;
+padding: 10px;
+text-align: center;
+}
+#profileteam{
+  color: #787879;
+  font-size: 10px;
+  
+}
+#points{
+  color: black;
+  padding: 10px;
+  text-align: center;
+
+}
+#credits{
+  color: black;
+  padding: 10px;
+  text-align: center;
+ 
+}
+#add{
+  color: black;
+  padding: 10px;
+  text-align: center;
+}
+#tablehover:hover{
+  background-color: rgb(209, 205, 205);
+}
+

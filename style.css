@@ -87,15 +87,16 @@ abbr,acronym { border:0;
 	margin-top: 70px;
 	margin-right: 50px;
   }
-
+  .topnav-right1 {
+	float: right;
+	margin-top: 30px;
+	margin-right: 100px;
+  }
 /* General Demo Style */
 body{
   font-family: "helvetica neue", helvetica;
 	background: rgb(52, 107, 226);
-	
-	
-	
-	overflow-y: scroll;
+  overflow-y: scroll;
   overflow-x: hidden;
  
 }

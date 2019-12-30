@@ -15,6 +15,7 @@
             <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
             <script language="javascript" type="text/javascript" src="./js/BackgroundSlider.js"></script>
             <link rel="stylesheet" type="text/css" href="css/leaguecss.css">
+          
         </head>
     
     </html>
@@ -105,59 +106,89 @@ $(document).ready(function () {
         <!----left coulum start-->
        
         <div class="col-sm-6" id="overflowTest" style="background-image: url('images/bg.jpg'); background-size: cover;">
-            <div class="navbar">
-                &nbsp; <a href="leagues.html" ><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a>
-                <a class="active" href="dashboard.html"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Profile</a>
-                <a href="#contact"><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp;My matches</a>
-                <a href="#contact"><i class="fa fa-bars" aria-hidden="true"></i>&nbsp;Menu</a>
-              </div>
-           <a href="dashboard.html"> <h2 style="color: white;"><b>&#8592;</b></h2></a>
-            
-<div class="container-fluid"   style="background-color:white; border-radius: 20px;">
+          <div class="navbar">
+            &nbsp; <a href="leagues.html" ><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a>
+            <a class="active" href="dashboard.html"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Profile</a>
+            <a href="#contact"><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp;My matches</a>
+            <a href="menus.html"><i class="fa fa-bars" aria-hidden="true"></i>&nbsp;Menu</a>
+          </div>
+     
+<div class="container" style="background-color: white; border-radius: 20px; width: 550px;">
+<h2><b><a href="dashboard.html"><img src="images/back.png" style="width: 60px; height: 60px;"/></a> Winners Board</b></h2>
 
-
-
-    <div class="container">
-       
-        <ul class="nav nav-tabs">
-          <li class="active"><a href="#home">Recent</a></li>
-          <li><a href="#menu1">Last Month</a></li>
-          <li><a href="#menu2">Menu 2</a></li>
-          <li><a href="#menu3">Menu 3</a></li>
-        </ul>
-      
-        <div class="tab-content">
-          <div id="home" class="tab-pane fade in active">
-           <div class="row">
-               <div class="col-sm-4"><p>Name</p></div>
-               <div class="col-sm-4"><p>Joined</p></div>
-               <div class="col-sm-4"><p>Prize</p></div>
-           </div>
+<div class="col-md-12 ">
+  <!-- Nav tabs -->
+  <ul id="tabs" class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#all" role="tab" data-toggle="tab">Top 10 Winners</a></li>
+    <li role="presentation"><a href="#online" role="tab" data-toggle="tab">Last-Month</a></li>
+    <li role="presentation"><a href="#offline" role="tab" data-toggle="tab">All Series</a></li>
+  </ul>
+  
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="all">
+     <div class="container" style="background-color: white;  width: 500px;">
+      <div class="row">
+        <div class="col-sm-3">
+<b>Name</b>
+<p>1.aaaaaaaaaa</p>
+<p>2.aaaaaaaaaa</p>
+<p>3.aaaaaaaaaa</p>
         </div>
-          <div id="menu1" class="tab-pane fade">
-            <h3>Menu 1</h3>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-          <div id="menu2" class="tab-pane fade">
-            <h3>Menu 2</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-          </div>
-          <div id="menu3" class="tab-pane fade">
-            <h3>Menu 3</h3>
-            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-          </div>
+        <div class="col-sm-3">
+          <b>Cash Prize</b>
+          <p>50Lakhs</p>
+          <p>24Lakhs</p>
+          <p>12.5Lakhs</p>
         </div>
       </div>
-      
-      <script>
-      $(document).ready(function(){
-        $(".nav-tabs a").click(function(){
-          $(this).tab('show');
-        });
-      });
-      </script>
+
+     </div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="online">
+      <div class="container" style="background-color: white;  width: 500px;">
+        <div class="row">
+          <div class="col-sm-3">
+  <b>Name</b>
+  <p>1.aaaaaaaaaa</p>
+  <p>2.aaaaaaaaaa</p>
+  <p>3.aaaaaaaaaa</p>
+          </div>
+          <div class="col-sm-3">
+            <b>Cash Prize</b>
+            <p>50Lakhs</p>
+            <p>24Lakhs</p>
+            <p>12.5Lakhs</p>
+          </div>
+        </div>
+  
+       </div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="offline">
+      <div class="container" style="background-color: white;  width: 500px;">
+        <div class="row">
+          <div class="col-sm-3">
+  <b>Name</b>
+  <p>1.aaaaaaaaaa</p>
+  <p>2.aaaaaaaaaa</p>
+  <p>3.aaaaaaaaaa</p>
+          </div>
+          <div class="col-sm-3">
+            <b>Cash Prize</b>
+            <p>50Lakhs</p>
+            <p>24Lakhs</p>
+            <p>12.5Lakhs</p>
+          </div>
+        </div>
+  
+       </div>
+    </div>
+  </div>
+    
+  </div>
 </div>
-     
+
+
+
         </div>
 
 

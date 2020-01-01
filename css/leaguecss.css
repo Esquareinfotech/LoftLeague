@@ -209,7 +209,7 @@ color: rgb(75, 73, 73);
   
     padding: 15px;
  
-    height: 880px;
+    height: 800px;
     overflow: scroll;
     border: 1px solid #ccc;
 }
@@ -333,3 +333,13 @@ html {
 	margin-right:20px;
 }
 
+#baseball{
+  max-width: 100%;
+  height: auto;
+}
+#imgleftt{
+  height: 85px;
+  width: 100px;
+  max-width: 100%;
+  height: auto;
+}
